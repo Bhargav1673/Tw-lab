@@ -12,3 +12,7 @@ this is changing and pushing the changes on repository in github
 
 for pushing the changes we use"git push origin main"
 
+q1
+q2
+q3
+
