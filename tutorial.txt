@@ -10,3 +10,5 @@ after adding repository to the github the following changes are made:
 
 this is changing and pushing the changes on repository in github
 
+for pushing the changes we use"git push origin main"
+
