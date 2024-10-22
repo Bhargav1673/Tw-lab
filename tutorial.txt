@@ -6,3 +6,7 @@ this is the 1st change to the file
 
 this is the 2nd change commited to the file
 
+after adding repository to the github the following changes are made:
+
+this is changing and pushing the changes on repository in github
+
