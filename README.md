@@ -1,0 +1,168 @@
+# JAGABATHUNI V M BHARGAV
+## 2023UCP1673 GIT ASSGINMENT 4
+
+## **_VECTOR DOT PRODUCT_**
+
+> In mathematics, the dot product or also known as the scalar product is an algebraic operation that takes two equal-length sequences of numbers and returns a single number. Let us given two vectors A and B, and we have to find the dot product of two vectors.
+
+The Reference is take from [Geeks-for-geeks](https://www.geeksforgeeks.org/how-to-calculate-dot-product-of-two-vectors-in-python/)
+
+Given a vector A = a<sub>1</sub>i + a<sub>2</sub>j + a<sub>3</sub>k
+
+![1st vector](https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-09b8cd354f24a03b37937193ada781b5_l3.svg)
+
+And another vector B = b<sub>1</sub>i + b<sub>2</sub>j+ b<sub>3</sub>k
+
+![2nd vector](https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-744b63e8b12f771a424e7b392e7823ec_l3.svg)
+
+> where 
+> + i: the unit vector along the x directions
+> + j: the unit vector along the y directions
+> + k: the unit vector along the z directions
+
+### The dot Product of these two vectors is calculated as =
+
+![dot product](https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-f17cd27814e5e0debb8fc6dc5a034212_l3.svg)
+
+![dot product diagram](data:image/png;base64,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)
+
+### Different methods to Calculate the dot product:
+
+**1. The Standard method**
+
+By multiplying the relevant elements of two vectors, the dot product is typically calculated. The results are then added. Consider two vectors with n elements each, a and b. The following formula may be used to get the dot product of a and b:
+
+![vector dot product](data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEQEBUQEhIVFRURFRcVFRUWGBUVFhUWFhUaGBYXFxYYHiggGBolHhcaITEhJSkrLi4uFyAzODMsNygtLisBCgoKDg0NFw8PFy0dFR0tNzcrKy0rLS0tKy03NystKy4rKzMrKysrKy41KystKy43LSsrNy0rOCsrKzctNzctLP/AABEIALEBHAMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAAAQUGCAIEBwP/xAA8EAACAQMCBAIIBQQABgMBAAABAgMABBESIQUGEzEiQRQVMlFhcZHRI1NUkpMHQlKBFiQzcqGxYsHSY//EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAfEQEAAgMBAAIDAAAAAAAAAAAAARECEhNRIUEDMfD/2gAMAwEAAhEDEQA/AOH6fl9RRp+X1FWhgaJkdjbW3h0gDowjJbV31fLy3rY6MWWAgtsxkq+beIAkKzZX4ZU9/Let6S498ZVW0/L6ijT8vqKtPFboy6hbW3/TVx+BHuzAnHbthT9RWSRQvp029uCyq3igix4pNHkPmaaSvbFVbT8vqKNPy+oq1EUMTrqSC28woaCIEsCBjbbfIx8dqwuliQHFvbMVJDfgRDT7sjvv7+1TSTtiq1p+X1FGn5fUVai5SCMsTb2+mPTnEEBJLE4x5AbHvv2pbu3jjRm9HtiV/wD4RYPiIAx3B8/d5VdJO2Kq2n5fUUafl9RVqjBDlgILf8LGvNvFuChbw489ux+dYAQaS3o8GNAcfgQ9i+jB/wB+Y8qaSdsVWNPy+oo0/L6irWQW8LBCYLYFxnHRh8g5OP29ztvWTWsIYL6Pb5ckL+BFgYAJ1f72292amsnXFVHT8vqKNPy+oq14tYDqxb2+UGTmCLfwFhjHypDBAqhmt7fDYxiCLuRnfI7dqayvXFVHT8vqKNPy+oq1s8UAxi2t9wDvDF5/IViI4f0tt/DH9qukp2xVU0/L6ijT8vqKtaIYf0tt/DH9qzEEH6W2/hj+1NJO2Kp+n5fUUafl9RVsRbQfpbb+GP7VmLS3/S238Mf2qaSdcVS9J+H1FGn5fUVbcWdv+lt/4Y/tWQsbf9Lb/wAMf2prK9cVRtPy+oo0/L6ireDh9t+lt/4Y/tWQ4dbfpbf+GP7U1k6Yqg6fl9RRpPw+oq4A4Zbfpbf+KP7VmOFWv6W3/ij+1TWV3hTzT8vqKNPy+oq4o4Ta/pbf+KP7VkOD2v6W3/ij+1KXeFONPy+oo0/L6irlDgtp+lt/4o/tWQ4JafpYP4o/tSjaFM9Py+oo0/L6irneorT9LB/FH9qUcBs/0sH8Uf2qLamGn5fUUafl9RVz/UNn+lg/ij+1L6hs/wBLB/FH9qKpfp+X1FGn5fUVdD1DZ/pYP4o/tR6hs/0sH8Uf2oPKPl+FQQNYDdxq747d/mfrXoeCx4A1P4TkHVuDjHfv2pyoq3LGmPhqPAYiQSXyDkHUdjjGR/rasRy/D737Ae0ewOofQ7070UuTnj4apOBRN3aQ+XtHyOf/AHvRJwKJgQS5BOT4u5+Pvp1opcnPHw1JwGIMWBcE9zqO/wA6xPL8JGCXIIwcsTkE5/8Ae9O9FLk54+GtuCRkglpPDuPEdjjGfptWLcAhOSS51AA+I7gbgfLbtTtRS5OePhpHAIRg+PYYHiOw32H1P1r0HBY8Eanwdj4j7sf+hitu6MgA6YUnO+okDH+gaaI+Kzza1tzaSvEwV1Er+DxYYNpQ4IGdvhS5NMfG6eEJsdT+HceI7bYpfVMe5y+/fxd63o84GrGfPG4z8KbOKcRe3VpJGt44gfbkkZBv2ydOAaXK6Y+MzwSL/wCWwx38hQOCw+5vrXhwXiclyxdWtpIMDTJDK0hLb5BGnAHbz86eaXKaY+G71NF8frS+qIvj9a2ru5SJGkkdURBlmYgKo95J7UWt0kqLLG6ujgMrKQVYHsQR3FLldMfGt6pi+P1rIcLj+P1ryuuP2kUogkuYUlOMRs6q5z28JOacRS5NMfGp6tj+P1pfVyfH61t0Glyax41RYJ8frS+hJ8frWPD+Iw3Cl4ZUlUEqWRgwDDuMjzrz4nxm2tdPpE8UWv2eo6pn5ZO9LNY8e/oa/H60otV+P1r0hlV1DqwZWGQwOQQfMEd6zpa6w8fR1pegK9aKWVDARCl0CsqKllQTTRilootCiiigKKKKAooooCiiigKKKKAooooCiiigj/PPG2srNnjGqeUiG3TbLzSHSgGfdnUfgpqK/wBN0eC/uLV4Hgb0W2ciRomeRgXV5WMTFSWOT766NLArFSyglDlSQDpPvGexo6C69ekasadWBqx7s+6ggnGuOXUd3JCkzeimSMTXIjUmyY4zCDjDq3h8RU9PWdRwRpz/AKnzansLUSRRmW56pM26BbdS+WXUuRqKbZ86nWge4b9/jXhdWMUuOpGj6e2pQ2M98ZoIT/TN9UF7cDBeS4kJmjU9GXQgCPBGNyuNsb5IO5rd4bxm4eVFaWUhmAIPD7mIEfGRjhPmal8cYUBVAAHYAYA/0KzoIDz9fST3MHDobd7lVxc3ccZiGY1yIkYysqgGTDYzkhPnWPIHMcUPCrUSqylnmgRVGrLxzOqxDH95A2HbY1PFgUMXCgM2NTADJx2yfOtC64BbSFS0Q8BDJpZk0sHD6lCEYbUoye5Gx2JFBx7j85me/l6kLJdX8Vu1vgNdSpF00IgcE6Ng39p9knIrr1hxiFpms0D9SAAOCNkXSpRixPZgdvfpb3GtyLhsKtrWKMN31BVDfUCvGz4NBDI0yIRI+dbanJbU2rxZO+Cds9hsMDagjfFeJXy8St0WBcGK60r6RpEgVocOy6cAjO2c+2a9v6h8VljtVtoFZrm+PRjRCusDGZnUsQo0rnc4GSPfUraJSwYgZUEA43APcA+WcD6UjQKWDlQWXIDYGQD3wfKg53yBxCO0a+ieFrZI7qFVhJRjCJYY1XUUJXBIzkE96a+aeMC4vjcxTwQi24frX0pNQYXLEjSmoEMVjBGc7MMjeui8d4El1GYjpVJWUz+AFpUXfRnyycb77ZxjORuPwyAsHMMZYYAYopO2w3IoIryXxW3tbK0tRHLG8kUTJEwyxadnY4O3Yh2I20qOwG1TWms8GVrwXjkM0cZihGMdNWwZCT/cxwBnyGR5mnSgKKKKAooooCiiigKKKKAooooCiiigKKxdsDPu925+laXrVP8ACb+Gb/8ANBv0Vp8O4ik6lkWQAEj8SOSI5HuDqMj4ivS5uhHjIc5/wR3+ukHFBsUU2TcbjTGUn8TBdredtz27J2+NOSnO9AtFFFAUUUUBRRRQFFFFAUUUUBRRRQFFFJQLRRRQFFFFAUUlLQFFFFAUUUlAtFFJQLRSUUC0UUUBXKuLc29XisZiutKW95Faejq4/GDA9aVl7lVYqo/7T766jPHqUrkjUCMjuMjuM+dMA5MtRaw2gDBLeRJVYEdQuj69TNjcliSffmg2eZuPiwRZ5UJg1aZpAd4c7IxTuyljg43GRt3wtvxljZPeSx9ELHJKFLBiI1BZWYjYEqMkb499bl9wqGd43lTWYSWQEkqGIxqK9iQOxPbNab8tW/oclgoZIZVdSqsfCshJZUznSu5AA2A2FBz3ki/u2urFZZbmN5oZJpxOwaK5G2FgUE6SuoHy2PY526FfcYljkKLaSyAY8atAFO3kGcH/AMV4cI5Rgt5Un1yyyRR9KNpX1dNPNUUAKOw3xnYVtX3LVlO5lmtYZHbuzxqzHHbcig1+P8wNaWDXpt3ZlVSYcgsupgvjZNQCrnJIzgA96azzhKUtkiihnuL3W0SxTEwCJPaleXRkAdsae+1P95wZWhWCKR7ZYyNPQ0pgAEacFSNO/bHkKaP+ArVUgWJpoWtdYjljfEmJTmQMSCGDHftQN/Gud7iBZwltG72MCy3ZMpWKN2XUIY20ZkcjHcKNxWnf8y6L70qbUqWfDkleJGLAy3UmFQDbU3hABP8Al5U98S5Btbh5nd5sXXTMqB8IzxBQkhXHteEfDIzjNe3EOSrWcXIcyH03payHwU6AAj6e3hxpB+Jz76Bmfnq5ia5E9pGno1l6ZhZi53LCOJzoAVjp3xnGfOnyw5glNjJfXFv0VSMyqmrUzIIw+W2Gkk5AHux78DWfkK1ZbhWeZjeJHHM7OC7CI5G+Ns9j8B5U9cb4YLi0mtQdIlheIHvp1IVBx54oItY8auLdYLVUFxeXETXlwZJDHFCpIzvhiBk6VUD+36tPJvMtwLeCOOPr3XEWuLvEkjJHFD1TuX0k4GQqgD6VKbvk2Kd45pXkWVbf0eQwuUWRCBkEd8Z3FYvyLbabcRyTRNawm3SSNwrtCcZRjjBzjOcZoGC651vLlOH+iRIj3U8qSoz7f8uG6iBtB8B0514zsBjfaT8Gnc8QvULEqot2xkkI7ReILntsFOPjnzpP+DbZTaGLXH6Bq6IRsZDDDByQS2rzPc5NevCeESW8M7FlkuLl5JXZRpUuRpjQZPsqoRcnvpztnFBHY/6gTExyehgW8l6bISdXxsTJ01kSPTuuc5yR2OM16nn5gl1cNbf8vZySRGQPlpZFKqiRpjuScE5wPjvjLk/kRYIbZ7l5HlgzIIi4aGKeQlpHRQNzljgknGdqdxyfa+gvYHW0UjO7Et49byGQsGHYhjt8qBoHPUlu9wl/brCbe1W7HSkM2UZiug5VcPqGPcfhTReceuzxBJrmJYVsrG4uzEkzPq1lVRZTpADDT7jjJqTnka1aK4jlaWZrtVSWaR8ylU9hQQAFA74A71ivItticO80hu4Ft5WkfUxRc4wcbHf5bdqDXHPGhoBNEEEli99OdZJhVQuFA0+IkvjO3atPivNfEBwya+FtFCHSM2waUtJ+MwVTIhQANhlITJ3OM062nItqhkLtLMZrYWrmV9WYh5DYY8u3upX5KhazNi89w8ZMZQs4LxdIgxhG09gVHfPagyv+Py2PD45rmMPcMY4lijfV1JXbSo1lRjPtHbbfvjdh43zrdx2t/G0EcV1aJFgpKXTFwAqMrFAS6lvZI3IG4zUt4zy/Fd2628pc9Mo6SBsSK8fsuG/y/wBeZpubke1aGSJ2lczyxzTSs2ZJWiKlAxxjSNI2AA2oNTh8w4PwdricEPGjSODM85eQjCjqSYOWwu2MAk/Om7+l3FJJZ7uJ7r0rC28usMGRXlVzKiY7KGGMZqYcZ4JFdmHqlisEqzBAQFZ09jWMeIA74+FJbcDhju5LxMiSaNImAwE0oSVOMd9zvQRjjnPs0fVe2tklit50tmkkkMfUnd1XREqo2QpbBY43pOPc+zwNd9K0WSOweJJHMpXUZFBKouklnGobdt+/lW8f6f2mstqm0m5F2I+p+GswbUWC48z3z/rGa25uTrZ0ljYyYnulu5DkZaRWDKM49gaVGPcKBj5v5xnEV6trArLZx6ZpXkKaZHQERxKFJdgGGdxuQPknNMs1nwe0tonlM0r2sGpD+KxJVpSGJ9ohWH+6dOIchWk8kzs8wFzIkskaviMyxkFX047+EZB2py4/y9HedEtJLGbZ+pG0TBSG06c7g52J+tAx/wBO7qWSS9VpJenFMqJBcNrnhwgLF29zHJAydvOptTVwPgcNmHEeotM/Ulkdi8kj9ssx+GwHYU55ohc0ZrHNGaqPSiiio0KKKKApn5k5ltuHosly5USNpXSrOScZOyg4A9/aniuSc4297f8ArC6iiQw28ElrCsglErYAkmkhUL4ix0qCe+gUHWgaWoxw7mQtPDZ9LxyQRSli2NIKnqB1IyrjC4XzDZ2xXnxuG7M7GOK6ZdsGO5hjTt5I+4oJXRUR5pz6r6EiTmWcLEiK2uUSsfCzSoMAKdy/YAVrcgLP6NPPMrm+1yRy69QUtDlYxEDt0yADkdySaCb0lceszJ6rnuIxdtxPTi5d1n6kayTgTCFW8HhQHSEzgAGi4jeOLiD2K3Itns4rdNQmLSXUjlXlRX8eQrjLe8H3UHYqTNcc4zy6Y24gFN0ywcOiQDXO3WumD6X7+Mr4NhsK8+LOpupIbg3MptuGQQrDEZz1biTU3iKbZyRu3uz5UHZ80Zrkd5BNGbWDiQuZIouH+FYuq4luyQCHaPcuowBq27mlseGXUjWcN76QRZ8Nlln0tINcjsoSJ3U+Ngvlk9qDrdFcVaO6W14bBOZBbtbSu/UW5kXqs2Y0kEPjyqNsGOMj34p0bg7tJHFLJcyw2PC2Zm/Gj68kpJVSAdR0hfZJJ9nOd6Dpt1fRRNGkjhWmbRGD3dsE4UeewJ/1WzXIuH8I1zcFivEmbFo5Zj1TiUgFEdlPgIBbc+4CnnniXPEES6WdrNbVnjSFZSJbnUwKv0t9QXTpB2y30Il/MHHYrJEZ1d2lcRxxxrqkkcgnSo28gTkkAYpyhk1KG0ldQB0nuMjsceYrlHC+XZZ5+FQ3qSM0FrNLKWZzpJdeijODjWATnzOPdTxz211Hfwm2WRnvLWa2Vl1GOKTqIVkk8lADMc99qDoOaK43zBwmVbk2DSSJDHbRJbSFLqXMjE9WZTCQDNqx7Z2HbbNP1vCsnFZIb/0h+l0EshiXosoQFpSU8JkLg5LdqCe29/FI8kSOGeEgSKNyhYagG9xI3xWzXF4rV47XiE0MdxHM9+Y5mVZuqlo0w1GPO7EqPaXJANet7byiC/8AQluEtrlrW3tw3V1GQyATzIr+JVxnfscE0HYs0z8J5mtbqea2hctJbf8AU8JC+0V8LHZt1I28xTZxZW4Zw50thJLPIdEZYtIzzy4UO58lB3PkAPKmHk/hFzZcTSKdUIPDxGHi6jKxjmZiZHcD8QlyfjVHSM0ZrHNGaIyzSZpM0maDLNGaxzRmgXNGaxzRmg2KSiiotiijNJmgWikzXNOcec54Lu6iinWMW0MXTQwmTrXMpJEZfsqnKDORjNB0YWkerX001atWrSM6tOnVn342z7q9q1rB5GiRpVCyFFLqDkBiPEAfMZptvOaLaKRo36+pDg6ba5dc4zsyxlW79wTVD3SU0cY4/HbWou2SRovATpXDIjkDWyvgqozk+Y322o4Tx+K5SWVAwhiZlEzAKkgT23j3yUBBGogZxtkb1A75oqKRc927QPdGK4W2QDROyALOS2hVhTOtixO2VGaxPPlusdy8sU8L2ao8kMip1CkmAjLpYq2Scd+4oJZWjY8KihlmmQHXcsryEknJVdKge4AeQqL3P9SbePrBra7zbIkrjpAfhOMiTJbCj4HB9w71s8X58t7d5IxDcTNDAly/SQELE++SWYBSAM4P+s1RLc0mai3EOeLePHTjnuCYBcssKLmOAjIdy7KBnfw5ztWF3z5bIYxHHPN1rY3adJAfwhj2tRGk753229+BQSzNGaic/PlsIYZUjmkNxB6SIlCB0hA3aQu4VcE4xk5PbNYXX9QLZQvTiuJi9qt4BEgJELebaiAuwJ3Pltk0EuzRmobJzsXu7OCC3lkju4fSGfCgrG2ACAWGNJYas9gds05cd5qitZegIpp5RGZnSFVYxxDPjcswAzg4Hc47UEgzSZrn3H+apbqaxtrEzql4nXaeJI9fR2Xw9XZcEgsSMgYxmpFxHmq3tpJ4pQ49Et1uHcgaXQkrhN8lsjsQO4oH/NGaiF7z/bwjLQz+BI3nAWPNuJcaBJlxl8HJVNRApw/4oja6NrDDNM0ZAmeNV6cJYZAdmYZbG+FBIzRD9mjNQfhXP4eO4nngkjjjnMEBChmmbVoEajVkyagcjAA99bj8+WyQzyyxzRNayRxTROq9RTKRoPhYqwIYHY5oJZmjNRfmDmVo+FTX0cbxsEbpLMuG1FtEbMnuOQcHfB3A7Vo8mceuLm6miMqXEMMUZaUR9FknbdotJ3ZdODqx/ugmuaM1jmjNAuaM1jmjNBlmkzSZozQLmjNY5ooNnNGaxzRmoFzRmsc0ZqjLNQi/5Hlma7VrsCHiEgeZREDJpUKojWRjgDC+7O5qa5rU4jxOC2UPPNHEpOkNIyoCx7AEnc/Cimey4VcJfdQnFqE0pF1SdLoqokpXG+pSw05wNIOCTkbl3y9HK7SGa6UsckJczoo8vCisAo+VO2aKJZm47wE3UCWplZYNhOCWaSaNRjQZScjP9x7n615cI5c6PDjw55S6aHiVwNLLE2dK/EqDjPwp9zRmhaGnk2d7FLKS7VvRmha2dYtOjoHwCRdWJPd5UlxyM0yzNPca5rqWB5nCaU6VuwZYY0ydKnHmT3NTPNJmhaKcV5NM4vh1tJ4g0QJ0+xFEANA33zg7/GmSHlm6vLniJ6pt4LiSO2YGI9SSCGMYMTscKDrZc4Pb4V0bNGaFoff8lP1ZDa3PQjuYI7eZDGJGEcQKr0mJ8JwxByDXonJaxmbpS6Q9kllCCC3RRAcnOfETkE/KpXmjNC0Fvf6doXgeNoT0baO1ZbiAXCFYvZdVLDS+fmKcb7lEyG9YTBWvbeO2UhMdFEXBwAd8ksdsYyPdUpzSZoWj1py08V7FcpMOnFarbNEUySFyQytnw5JGe/atfjXKk0tzNcQXXR9LgWCcFNbaF1ANE2RobDfGpQzgdzjJwPnS5oI/wrlZLa6SZG/DhtFtYo8eyAxZn1eZOf8AxXlx3lFbu9iumkISNAssIG0wR+pGGPuDb488U88V4rBax9WeRY0yBlvMnsABuT8BWzFKGUMpyGAIPbIIyO9BEpuSR6fJeK0DCaRJWWaBZXRlUL+FIWGgEDzBwTW7wjl6a1uppI7gej3MzzvE0eXEjjfTLnZc74IPuqRUZoWhMPIsi2kduLka7a7N1BJ08gEuzlZFz492O+R5V6vyPrGqWfXLLdxXVw+jCydHGiJUz4UAAHmal4Yds7juKXNCzPzdwV76AQrIIyJY5cldYPTYMFK5GQSBmvPgXAGguJruabqz3ARGIQRoqR+yqoM+ZJySTT5Wrb8SgkkeFJY3khx1EVgWTPbUo3X/AHQbeaKxzRmgyzSZpM0maDKjNY5ozQLmikzRmg2M0ZrHNJmgyzRmsc0ZoMs1yD+o99JePeMlu81vw+B4hIrRiOO5IDyyMGYFtKaQNIJGW99ddzXgtrGFKBECtnUoUaW1e1keeaBsseY4XMcXi6jpCQAM5EsbOGB/xARsnyxTbx7jVxFOyJJKFGMBeHXNyNx+bGdLf/VO1rwREu3uyQWMawxKFCrFEpLYHvYsxyfcAABvl1zQRjmW9uBwl7mKR1mjjWXUI2iZtDAspifJTK5GDvWPK3FJrlLjiDM5hkz6LDjA6UQI14xkmRgT8sU58ycHN7EIOu8UbN+MI8apY8HMeo+wCcZI3xkedONtCsaLGihVRQqqNgqqMAD4YoOZQcy3A4bJxX07qTsoHowMYgtBLOIwzxga8oPNjgmkuuYLm2W/WO+e6jitIis7dJuneTNoVEaNQv8Acp074zXSE4fCurTFGOp7eEUa/wDu23/3QnD4VTpiKMJnOgKoXPv04xmhbmnFrriEJvgeIzYtOHxzuQsQxcsGKonh8KHAyO5z3r04tx+46zxy8Qa2W34bFLJp6QeS4kyQFDg7nwgge/yzXSZLONtWY0PUxryoOvHbV78fGmu15ZgS5nunCyvOyMNaIekI10qqbf7otoXJzDdSdCC7u2sdHDxdSuojSSWUnAUGRSNhuVAzk1lZcav7n0OKS4e3b1fLdXTIqByAQsZw4IViCD28zXRbmyilIMkaOV9ksqsR8s9qya2jJLFFJZdJOBkr/iT5j4US3LE5nvXt+H27zsjXNtLO8weCGSQK2Il6kwKDwkMcDJxW+99fO8cD3xT0fhzXF1LD021s7HpFWK6c4X2gNxnAGQRP5uHQOqo8UbKnsqUUhfLwgjaszZxb/hp4lCN4Ruo7Kdt1+FC3MYHlvJ+CrcXckcrWz3JIMalpQMJgMpy7KxB+AOAO9P3NvGX9OFm12bKBLVrlpVMavI2plCK0ikYXTkgDJyKmBtIiUbppmPZDpGU8vCf7f9Ul1ZRS46kaPp3XUobHyyNqFuY2q3XEZuELcTSpIIJbl9IRTlGCxyFSpwzBiD5Y7YO9P/OnMM9leRrGxb0m1lSCHGQ10JECHt7n38sCpl0U1a9K6gNOrA1afdnvj4UkkCMysyqWT2WIBK576Se1C3MOL8S4gszWC3hSW2t4mErSQQ9WeTOp5OopLxA4UKgz76fLXiMt1xGW2lvvRxZtCiwxGNGuXZFd3bWCShJICr9al9xYQyMHeJHZezMqkj5EileyiZxKY0Lr2cqCw+Td6LblFtxOS3hv76K6YyzX/opL9NlhTqiNZ3ULsQoIGfD22Pnt3vMF1BHfxwXj3KRm2iguH6ZIuZpAsiK8YCsAD5DbcV0sWMOHHSTEpy40rhz72Hn/ALpFsYQojESBFOoKFXSG94GMA/GhZm4hfScN4fJNPKZ5hkrkBdcz4EcSKOy6sADc1FOQYZoOJ9OeB4ZJrENJ1DGWmlWdmkl/DYjGXxg7jFdJmhR8a1DaSGGoA4YdiM9j8aDCpYOVGoDAbA1AHuAe+KJb1zSZpKM0C5ozSUUQuaSkooFozSUUHvmjNY5ozRS5ozWOaM0GWahPM3OsttcXEUUUDraQJM/UlMbuz6sRRqActgDHxYVNM1zbjPJ95czXmYbb/m5UaK6eRjLboiqq9NAmdQwT7Q70IdDsbgyxJIVKa0VtLe0uoZ0n4ivCfjNqjFHuIVZdirSIrA/EE5FM/DLy4e+ltxJrhttBeTwklmiAEJx2fUGkbzAZffXrfcvySSM4nRQxyFNrA5Hzdt2+ZoHS94rBCiSSSKElZERu6s0nsAEe/wAj2rK14lFK8saOGaBtEoGfA2M6Se2cGor/AFEkWPh6W+rVcO0XoyKoDSzROrDCLsq5G/kAacOG8vPFw57XXia4SVpZR5zz5aRvlqbA+AoNuHmqxfqlbhCtuCZX36aAHB8eNJ3ONjRb81WTxSzrOui3x1SQylAcYLKRkA5GDUXflu+k4XFZNFbxtZvAyKsrNHciE5YP4QY9R3/u371jxHlK8uxcyzCJJL2S2V4lcssVtA4YjWVHUc4PkO9BIH574YNX/OR/h41d84bsQMbr8RtWxxPm2xtm0TXKIwRZNO5OhuzAAbj41H+NcpTzDiRQRhr0Qwxb+zBGAGztse+3ypmWwuru64mtskOiXp2BndzmFIoxr0xhTrzr/wAhuBRU84pzPZ2wUzXCL1E6i4yxMf8Anhc+D/5dqxv+arKDT1bhF6kfVTudcf8AkuPa7+VRm75WvIZZvRRDIlzaRWgeV2VoFjUqTpCnqA6s4yNwKzg5PmhMvTKP0+HJZWpY4OrB6rNt4QfD76Ikt1zPZxxRzNOuiddcRAZi641FgqjOAO5xtXlfc3WEAUyXMY6kYlTcnXGezLj2h57eQzURueSbmNoOmBMi2MVo6ekSWpUpu51orFlY9wMdq37rlOYNePCkSGSyjs7QatkVUOrJI8I1MffkKKKd7rnW0S5trYNrN2odWXJUIw/DY4G4Y7DH+8U4cY5gtbPAuJljLAsBuW0r7TYGSFHv7UycO4DPBfW8irG0ENkLbOoh42ByxVcYYMQo7jsa8OOcEvvTZ7i2WFxd2q22qV2U2+NQLBQp6i+LOMjeiPTmfnHpzW1paSQmW7wwkkDyRpGfZbTHgsWOw3wMHNSKXjECPLG8ihreMSyg5GhDnDH4bGo/wDlZ7W6hbUGhtLFbaM/3GQvqkbHkCMeflXlzNyrLd3qyBkFvLCsV0DnW6xydRUX4N2PwoHmbmyxQIWuFAlRZF2b2HOEdsDwKc7FsZp2trqKSVoVkUyRqrMgOSqvnSSPLODioJe8ozNezO0azW91JE5BuJIQixqF0NCqkSqMZAJA3xUh5N4NNa3N80mhkuZutHICephtum642CAAAg9qKkvo/x/8AFJ6P8f8AxUd5r4gUE7kOyWsSydKNijSl2xjUu/yA7mvbgVwVkjVRKqTxFxFNkyRFSBvkk4OffWfyZaVf2n4o32r6/pPTwHBwRnyyMj/YBrzigfHjZSfLSpX65Y1Gkup4pAbua5iYzAagkb2jKz4VAQCUBBAy2CCaPW93FaXl0WicQST9NWVtWI5SNLMGwRgYGBt55qtUlPS+NJ0/jTNzBx1rSRcqrRm2uJiNw+qHp4UHtg9T/WK07iS9FzaCVoR1DMQI+oAH6BIRwx/EUd9W3bsKJSSaKTRTDZ8wPMLZFRRNMzi4QknoiDKz47E/iaVU+esGti5vbiSd4bcRL0FQu0odtTOCQihSNOw3Y579qFHXTSYphm4pdO9x0UhC2Z0OH1kyuIVlYIwP4agOAGIJJztWjd8zXGie4iSIw20UUxV9fUkWSPWyAjZSB/dg57Y86FQldFM3D7+4Ny9tKIspHFMGQOBokaRSmGPtKY/a7HPYU80Kh64oxVNvWk/5sn73+9HrSf8ANk/e/wB6FLk4pKpv60n/ADZP3v8Aej1pP+bJ+9/vQpcjFFU39aT/AJsn73+9HrSf82T97/ehS4yRhewAySTgYyT3J+NLiqcetJ/zZP3v96PWk/5sn73+9Clxim4ONx2ONxnvg+VLiqcetJ/zZP3v96PWk/5sn73+9UpcfFJiqc+tJ/zZP3v96PWk/wCbJ+9/vUKXGwfdSBMdhj5DFU69aT/myfvf70etJ/zZP3v96pS42KTFU69aT/myfvf70etJ/wA2T97/AHqJS4u9GKp160n/ADZP3v8Aej1pP+bJ+9/vQpcXBoxVOvWk/wCbJ+9/vR60n/Nk/e/3oUuLikqnfrSf82T97/ej1pP+bJ+9/vVKXEr3tO5qmnrSf82T97/elHFJ/wA2T97/AHqLELi8Q4WJWDhnjdRgOmxwfIg7EfOk4fwsREuWaSRhgyPjVgdgANgKp362n/Nk/e/3o9az/nSfvf70n5q/oxjW6+L/AGtweWICdzMUDiTpGWQxag2oHQTuNW+O3wrI8vwnqghylwHEkRY9I9T/AKhCeRNVF9az/myfvf70etZ/zpP3v96KtonLEGsO5klIieH8Vy46cmnWuD5HSN++1Lb8vRxukuqZ2hDCLqSM4UMukjB7+W5ydu9VK9az/myfvf70nrWf82T97/egtbwrgbiW4uJgiyXWFKxM5CqoxkOwB1MdycDsO+M1tXXA43bWGlRigRmjdkLqvYNjvjPfvud6qT61n/Nk/e/3pPWk/wCbJ+9/vUr5tb+KWyuuXoXZmzKvVAEoR2UShVCjWPM6QBnuQBWc/A4XSaMqQtyipIASPCqaAF/x2qpXrSf82T97/ej1pP8Amyfvf71UW8WxQTNOAdbxrEdzjSjMy7e/LnetnFU69aT/AJsn73+9HrSf82T97/eg06KKKAooooCiiigKKKKAooooCiiigKKKKAooooCiiigKKKKAooooCiiigKKKKAooooCiiigKKKKAooooCiiig//Z)
+
+**2. Geometric method**
+
+Using the magnitudes of the two vectors and the angle between them, the dot product may be calculated geometrically. If is the angle between two vectors a and b, then we have two vectors a and b. The formula below may be used to determine the dot product of a and b:
+
+![2 dot product](data:image/png;base64,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)
+
+**3. Matrix method**
+
+Calculating the dot product of two vectors using the matrix method is a handy method. By multiplying the respective elements of the vectors and then adding the products, it is possible to determine the dot product of two vectors. The two vectors may be represented as matrices using the matrix technique, and the dot product can then be calculated by multiplying the matrices.
+
+Consider the following two vectors:
+
+a = [a1, a2, ..., an]
+
+b = [b1, b2, ..., bn]
+
+These vectors can be written as row matrices in order to be represented as matrices:
+
+A = [a1, a2, ..., an]
+
+B = [b1, b2, ..., bn]
+
+In order to determine the dot product of a and b, we may now utilise matrix multiplication:
+
+a · b = a1b1 + a2b2 + ... + anbn
+
+= [a1, a2, ..., an][b1]
+
+[b2]
+
+[...]
+
+[bn]
+
+= A × B^T
+where matrix B's transposition, BT, is. A 1 1 matrix that contains the dot product of the two vectors is the outcome.
+
+### PYTHON NAIVE APPROACH 
+
+>The dot product, sometimes referred to as the scalar product, is a method used in linear algebra to multiply two vectors to produce a scalar. One simplistic method for calculating the dot product of two vectors would be to run over each member of the two vectors in a for loop, multiply the corresponding elements, and then sum the results.
+
+Here is some Python code that uses this strategy:
+
+    def dot_product(v1, v2):
+
+        if len(v1) != len(v2):
+            raise ValueError("Vectors must have the   same length.")
+        result = 0
+        for i in range(len(v1)):
+            result += v1[i] * v2[i]
+        return result
+
+Although this method works, it is ineffective for huge vectors. It is impracticable for use in machine learning or other applications where huge vectors are often used since as the size of the vectors rises, the computing time likewise climbs linearly.
+
+More sophisticated algorithms, like the BLAS (Basic Linear Algebra Subprograms) library, are used to get around this inefficiency since they can do dot products significantly quicker by utilising specialised hardware and methods.
+
+
+### PYTHON DOT PRODUCT WITHOUT NUMPY 
+
+A mathematical procedure called the dot product takes two vectors of equal size and produces a single scalar result. The appropriate elements of each vector are multiplied to determine the dot product of two vectors, which is then determined by adding the answers.
+
+The dot product may be computed in Python without the use of external libraries like NumPy by utilising loops and simple arithmetic operations. Here is how to accomplish it:
+1.The first thing we must do is make sure the two vectors have the same size. We are unable to compute the dot product if the vectors have different widths.
+
+2.Set up a variable to hold the value of the dot product. Set this variable to 0 to make it zero.
+
+3.Multiply the appropriate elements of each of the two vectors as you iterate through each element, then add the result to the dot product variable.
+
+4.Get the dotted product value back.
+
+Here is an example of how to use Python to implement the dot product without NumPy :
+
+    def dot_product(vector1, vector2):
+    """
+    Calculates the dot product of two vectors.
+
+    Args:
+        vector1 (list): First vector.
+        vector2 (list): Second vector.
+
+    Returns:
+        dot_product (float): The dot product of the two vectors.
+    """
+    # Ensure the two vectors are of the same length
+    if len(vector1) != len(vector2):
+        raise ValueError("Vectors must have the same length")
+
+    # Initialize the dot product to zero
+    dot_product = 0
+
+    # Calculate the dot product
+    for i in range(len(vector1)):
+        dot_product += vector1[i] * vector2[i]
+
+    return dot_product
+
+### PYTHON DOT PRODUCT USING NUMPY
+The mathematical operation known as the dot product of two vectors in linear algebra takes two equal-length sequences of integers and produces a single number. It is also referred to as the scalar product or inner product of two vectors. The dot product is described as the product of the equivalent items in the two sequences added together.
+
+Using the numpy.dot() method in NumPy, you may get the dot product of two arrays. This function accepts two input arrays and outputs a scalar value. The following is how to compute the dot product:
+
+>dot_product = a[0]*b[0] + a[1]*b[1] + ... + a[n-1]*b[n-1]
+
+where n is their combined length, and a and b are the two arrays.
+
+The @ operator is another option for calculating the dot product. The numpy.dot() method is similar to using this operator, which was introduced in Python 3.5.
+
+Here is an example using NumPy showing how to compute the dot product of two arrays:
+
+    import numpy as np
+
+    #define two arrays
+    a = np.array([1, 2, 3])
+    b = np.array([4, 5, 6])
+
+    #calculate the dot product using numpy.dot()
+    dot_product = np.dot(a, b)
+
+    #calculate the dot product using the @  operator
+    dot_product2 = a @ b
+
+    print(dot_product)   # output: 32
+    print(dot_product2)  # output: 32
+
+In this example, numpy.dot() and the @ operator are used to compute the dot product of the two arrays [1, 2, 3] and [4, 5, 6]. 32 is the final dot product.
+
+### Table showcasing comparison among varios versions:
+
+| using NUMpy | wihtout numpy |
+| ----------- | ------------- |
+| The sum of the products of related items in two vectors or matrices is computed using the mathematical operation known as the dot product in Python. Both using and without the numpy module, Python may implement the dot product.| Without Numpy we build two Python lists, a and b, and then use a for loop and the sum() method to compute their dot product.
+|
